@@ -10,17 +10,24 @@
 
 <body>
  
- <header id="masterhead">
+ <header>
 
+  <div id="logo">  
   <figure>
   <a href="index.html">
-  <img src ="images/logo.png" alt = "The logo">
+  <img src ="./Images/logo.png" alt = "The logo" title="Adopt, save a life">
   </a>
   </figure>
+  <p id="logotext">
+    Don't buy, adopt
+  </p>
+ </div> <!--end of logo div-->
 
+ <div id="headermaintext">
   <h2>This website is awesome</h2>
   <p>This website has some subtext ...</p>
-  <button href="signuppage.html">Sign up</button>
+  <button href="signuppage.html" class="btn" type="button">Sign up</button>
+ </div> <!--end of div headermaintext-->
 
   <nav>
     <ul>
@@ -30,10 +37,11 @@
     </ul>
   </nav>
 
+ <div id="randomimage">
   <figure class="secondimage">
-  <img src="" alt="A random image" title="A random image">
+  <img src="./Images/Pequi2.JPG" alt="Adopted dog" title="A picture of a happy adopted dog" height="300px" width="350px">
   </figure>
-
+ </div> <!--end of div random image-->
  </header>
 
  <main>
@@ -42,30 +50,40 @@
 
   <h3>Some Random information.</h3>
 
-  <div class="fourimages">
-    <figure>
+  <div id="fourimages">
+
+     <div id="imagewithtext">
 
       <div class="firstimage">
-      <img src="" alt="firstimage" title="first image">
-      <p>Some text under the first image</p>
+      <img src="./Images/cutedog4.jpg" alt="firstimage" title="first image" >
       </div> <!--end of div firstimage-->
-        
-      <div class="secondimage">
-      <img src="" alt="secondimage" title="second image">
-      <p>Some text under the second image</p>
+      <p>Some text under the first image</p>
+
+     </div> <!--end of div imagewithtext-->
+     
+     <div id="imagewithtext">  
+
+     <div class="secondimage">
+      <img src="./Images/cutedog.jpg" alt="secondimage" title="second image" >
       </div> <!--end of div secondimage-->
+      <p>Some text under the second image</p>
 
+    </div> <!--end of div imagewithtext-->
+
+    <div id="imagewithtext"> 
       <div class="thirdimage">
-      <img src="" alt="thirdimage" title="third image">
-      <p>Some text under the third image</p>
+      <img src="./Images/cutedog2.jpg" alt="thirdimage" title="third image" >
       </div> <!--end of div thirdimage-->
+     <p>Some text under the third image</p>
+    </div> <!--end of div imagewithtext-->
 
+     <div id="imagewithtext"> 
       <div class="fourthimage">
-      <img src="" alt="fourthimage" title="fourth image">
-      <p>Some text under the fourth image</p>
+      <img src="./Images/cutedog3.jpg" alt="fourthimage" title="fourth image" >
       </div> <!--end of div fourthimage-->
+      <p>Some text under the fourth image</p>
+    </div> <!--end of div imagewithtext--> 
 
-    </figure>
   </div> <!--end of div fourimages-->  
 
  <div id="quote">
@@ -84,7 +102,7 @@
     Sign up for our product by clicking that button right over there!
   </p>
 
-  <button class="secondsignup">Sign up</button>
+  <button class="btn" type="button" id="secondbtn">Sign up</button>
 
  </div> <!--end of div catchattention-->
          
