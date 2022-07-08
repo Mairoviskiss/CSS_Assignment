@@ -74,18 +74,19 @@
 }
 
 body {
-    border: 10px;
-    width: 998px;
-    margin: 0 auto;
-    padding: 0 auto;   
+ border: 10px;
+ width: 1000px;
+ margin: 10% auto;
+ padding: 0 auto;   
 }
+
 header {
  background-color: #1F2937;
  display: grid;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr, 2fr, 1fr;
- 
-
+ padding-bottom: 50px;
+ padding-left: 10%;
 }
 
 header h2 {
@@ -105,14 +106,20 @@ header p, a{
  grid-row: 1/2;   
 }
 
-#logotext {    /* NOT WORKING YET */
- font: 40px;
+#logotext {   
+ font-size: 40px;
  color: #F9FAF8;
+ margin-left: 30px;
+ margin-top: 15px;
 }
 
 #headermaintext {
  grid-column: 1/2;
- grid-row: 2/4;   
+ grid-row: 2/4;  
+}
+
+#headermaintext p {
+ text-align: justify 
 }
 
 
@@ -122,7 +129,7 @@ color: white;
 }
 
 .btn {
- width: 20%;
+ width: 150px;
  padding: 10px;
  border-radius: 10px;
  font-size: 15px;
@@ -145,7 +152,6 @@ color: white;
  grid-column: 2/3;
  grid-row: 2/4; 
  width: 100px;
-
  }
 
 
@@ -154,6 +160,8 @@ color: white;
  font-weight: bolder;
  color: #1F2937;   
  font-family: 'RobotoBlack', sans-serif;
+ display: flex;
+ justify-content: center;
 }
 
 #quote {
@@ -196,8 +204,17 @@ a{
 }
 
 nav {
- grid-column: 2/3;
- grid-row: 1/2;   
+ grid-column: 2/4;
+ grid-row: 1/2;  
+}
+
+nav ul {
+ display: flex;
+ justify-content: space-between;
+}
+
+nav ul a:hover {
+ color: rgba(0, 153, 255, 0.767);
 }
 
 #randomimage {
@@ -205,14 +222,24 @@ nav {
  grid-row: 2/4;   
 }
 
+.Pequi {
+ height: 400px;
+ width: 500px;
+}
+
 #catchattention {
  display: grid;
  grid-template-columns: 1fr 3fr, 1fr, 1fr;
  grid-template-rows: 1fr, 1fr, 1fr;
- margin-left: 10%;
+ /*margin-left: 30%;*/
  padding: 1%;
  width: 700px;   
- border-radius: 10px;   
+ border-radius: 10px;  
+}
+
+#centering {
+ display: flex;
+ justify-content: center;   
 }
 
 #firstline {
@@ -227,17 +254,19 @@ nav {
  
 }
 
-
+.authors {
+ font-size: 15px;
+ display: flex;
+ 
+ align-items: flex-end;   
+}
 footer {
  background-color: #1F2937;
  color: white;
  padding: 8px;
  display: flex;
-grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+ grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+ display: flex;
+ justify-content: center;
 
-}
-
-footer p {
-margin-left: 390px;
- 
 }
