@@ -75,7 +75,7 @@
 
 body {
  border: 10px;
- width: 1000px;
+ width: 1050px;
  margin: 10% auto;
  padding: 0 auto;   
 }
@@ -87,6 +87,7 @@ header {
  grid-template-rows: 1fr, 2fr, 1fr;
  padding-bottom: 50px;
  padding-left: 10%;
+ padding-right: 10%;
 }
 
 header h2 {
@@ -170,16 +171,21 @@ color: white;
 
 .quotetext {
  font-size: 36px;
- font-family: 'Roboto-LightItalic', sans-serif;
- font-weight: light;
- font-style: italic;
- color: #1F2937;   
+ font-family: 'RobotoLightItalic', sans-serif;
+ color: #1f2937;   
 }
 
 
 #fourimages {
  display: flex;
  justify-content: space-around;
+}
+
+#imagewithtext p {
+ display: flex;
+ justify-content: center;
+ font-family: 'RobotoMediumItalic', sans-serif;
+   
 }
 
 img {
@@ -223,15 +229,16 @@ nav ul a:hover {
 }
 
 .Pequi {
- height: 400px;
- width: 500px;
+ height: 350px;
+ width: 450px;
+ margin-right: -70px;
+ margin-top: -50px;
 }
 
 #catchattention {
  display: grid;
  grid-template-columns: 1fr 3fr, 1fr, 1fr;
  grid-template-rows: 1fr, 1fr, 1fr;
- /*margin-left: 30%;*/
  padding: 1%;
  width: 700px;   
  border-radius: 10px;  
@@ -255,10 +262,10 @@ nav ul a:hover {
 }
 
 .authors {
- font-size: 15px;
+ font-size: 20px;
  display: flex;
- 
- align-items: flex-end;   
+ padding-left: 850px;
+ padding-bottom: 10px;
 }
 footer {
  background-color: #1F2937;
